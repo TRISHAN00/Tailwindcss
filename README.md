@@ -23,3 +23,39 @@ Install plugin to your vs code called Tailwindcss Intelligence
 npx tailwindcss init
 
 Create two folder and name should be src and output.
+
+Create a file into src folder called tailwind.css although it can be anything.
+
+Write below code into the tailwind.css 
+
+@tailwind base;
+@tailwind components; 
+@tailwind utilities;
+
+Create a folder called .vscode in the root folder and create a file name setting.json
+
+
+Put this code into the setting.json file 
+{
+  "css.validate": false,
+  "tailwindCSS.emmetCompletions": true
+}
+
+
+Paste below code into the package.json file 
+======================================================
+"build": "tailwindcss -i ./src/tailwind.css -o ./output/tailwind.css -w"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
